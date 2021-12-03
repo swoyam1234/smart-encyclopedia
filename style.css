@@ -6,8 +6,7 @@ body{
 }
 header{
 	width: 100vw;
-	height:90vh;
-	background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url('img/map2.jpg');
+	height:10vh;
 	background-size: cover;
 	position: relative;
 	background-attachment: fixed;
