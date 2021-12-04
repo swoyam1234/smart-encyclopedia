@@ -15,11 +15,12 @@ $(".portfolio-menu ul li").click(function () {
 });
 const countries = document.querySelectorAll(".text");
 const cards = document.querySelector(".portfolio-item");
+let res;
 cards.addEventListener("click", async (e) => {
   if (e.target.classList.contains("text")) {
     console.log(e.target.innerText);
     const country = e.target.innerText;
-    let res = await getCountry(country);
-    console.log(res);
+    window.location.href = `./country.html?name=${country}`;
   }
 });
+console.log(res);
