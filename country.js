@@ -31,8 +31,12 @@ getCountry(country).then((data) => {
             <p><strong>Capital:</strong> ${item.capital}</p>
 
             <p><strong>Top Level Domain:</strong> ${item.topLevelDomain}</p>
-            <p><strong>Currencies:</strong> ${item.currencies}</p>
-            <p><strong>Languages: </strong> ${item.languages}</p>
+            <p><strong>Currencies:</strong> ${item.currencies
+              .map((currency) => currency.name)
+              .join(",")}</p>
+            <p><strong>Languages: </strong> ${item.languages
+              .map((language) => language.name)
+              .join(",")}</p>
           </div>
         </div>
       </div>
